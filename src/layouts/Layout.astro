@@ -1,4 +1,9 @@
 ---
+import "@fontsource-variable/inter";
+import "@fontsource/noto-sans-sc/100.css";
+import "@fontsource/noto-sans-sc/300.css";
+import "@fontsource/noto-sans-sc/400.css";
+import "@fontsource/noto-sans-sc/700.css";
 interface Props {
   title: string;
 }
@@ -28,7 +33,7 @@ const { title } = Astro.props;
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: "Inter Variable", "Noto Sans SC", system-ui, sans-serif;
     background: #13151a;
     background-size: 224px;
   }
