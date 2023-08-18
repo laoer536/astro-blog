@@ -78,7 +78,10 @@ p {
 1. 全局样式的重置，一旦项目应用了这个库，他会帮你清除浏览器默认样式，并对部分标签在不同浏览器的做了样式统一。
 2. 🎨调色板，多风格颜色任你选，还可以为颜色设置透明度，满足更多要求。~~灵感~~(抄)来自tailwindcss。调色板所有支持的颜色可以[点击这里](https://tailwindcss.com/docs/customizing-colors)查看。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6045561b4fa4e59bf552a277fc96820~tplv-k3u1fbpfcp-watermark.image?) 4. text部分的mixin（不断增加中）5. scss工具函数（不断增加中）
+![scss-colors-gfghj.webp](https://s2.loli.net/2023/08/18/AJV6z4aljer8OQf.webp)
+
+3. text部分的mixin（不断增加中）
+4. scss工具函数（不断增加中）
 
 ```scss
 $namespace: "fast";
@@ -120,7 +123,7 @@ $namespace: "fast";
 }
 ```
 
-6. 其他部分（媒体、布局、高级样式...）正在迭代。
+5. 其他部分（媒体、布局、高级样式...）正在迭代。
 
 ## 结语
 

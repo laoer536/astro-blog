@@ -13,11 +13,11 @@ date: "2022-05-01"
 
 地址：[MongoDB Community Download | MongoDB](https://www.mongodb.com/try/download/enterprise)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5638e11148d3416dbeb216f8f0e1eafb~tplv-k3u1fbpfcp-watermark.image?)
+![koa2-mongoudb-1.webp](https://s2.loli.net/2023/08/18/bpB36RtGkY8IwEn.webp)
 
 **2、下载依赖**
 
-![package.json依赖.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c87484c359934d78b3a0d9ef05d13ecd~tplv-k3u1fbpfcp-watermark.image?)
+![koa2-hgsjhdf.webp](https://s2.loli.net/2023/08/18/WdlsqUoY3MiGvaI.webp)
 
 **3、对依赖进行配置（我统一放在了setting目录下）**
 
