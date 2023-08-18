@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+const blogEntries = await getCollection("blogs");
+const cards = blogEntries.map((item) => ({
+  body: item.data.date,
+  href: "/blogs/" + item.slug,
+  title: item.data.title,
+}));
+---
+
+<Layout>
+  <h1 class="text-center text-6xl font-bold mt-10">Blogs</h1>
+  {
+    cards.map((item) => (
+      <div class="max-w-screen-xl mx-auto">
+        <div class="my-10">
+          <Card {...item} />
+        </div>
+      </div>
+    ))
+  }
+</Layout>

@@ -9,12 +9,12 @@ const { href, title, body } = Astro.props;
 ---
 
 <li class="link-card">
-  <a href={href}>
-    <h2>
+  <a href={href} class="space-y-3">
+    <h2 class="text-2xl">
       {title}
       <span>&rarr;</span>
     </h2>
-    <p>
+    <p class="text-xl">
       {body}
     </p>
   </a>
