@@ -1,5 +1,12 @@
 # Astro blog sample template.
 
+## 🍕 Feature
+
+- Prettier for astro.
+- Automatically generate a list of articles along with the article path.
+- Typescript support.
+- Tailwindcss support.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
