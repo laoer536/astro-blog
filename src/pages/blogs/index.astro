@@ -3,11 +3,13 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 const blogEntries = await getCollection("blogs");
+const base = import.meta.env.PUBLIC_BASE_PATH;
 const cards = blogEntries.map((item) => ({
   body: item.data.date,
-  href: "/blogs/" + item.slug,
+  href: base + "/blogs/" + item.slug,
   title: item.data.title,
 }));
+console.log(cards);
 ---
 
 <Layout>
