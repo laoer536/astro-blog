@@ -1,6 +1,6 @@
 ---
 import "@fontsource-variable/inter";
-import '@fontsource-variable/fira-code';
+import "@fontsource-variable/fira-code";
 import "@fontsource/noto-sans-sc/100.css";
 import "@fontsource/noto-sans-sc/300.css";
 import "@fontsource/noto-sans-sc/400.css";
@@ -23,7 +23,7 @@ const { title, isMd } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class:list={[{"isMd prose prose-neutral":isMd}]}>
+  <body class:list={[{ "isMd prose prose-neutral lg:prose-lg": isMd }]}>
     <slot />
   </body>
 </html>
@@ -43,12 +43,10 @@ const { title, isMd } = Astro.props;
     background: rgb(var(--accent-dark));
     color: #aba8bd;
   }
-  body.isMd {
-    max-width: 1200px;
-    margin: 0 auto;
-    @apply py-10;
+  body {
+    @apply py-10 w-full p-4 lg:mx-auto lg:p-0 lg:py-16;
   }
-  code{
-    font-family: 'Fira Code Variable',"Noto Sans SC",sans-serif !important;
+  code {
+    font-family: "Fira Code Variable", "Noto Sans SC", sans-serif !important;
   }
 </style>
