@@ -5,9 +5,9 @@ import "@fontsource/noto-sans-sc/100.css";
 import "@fontsource/noto-sans-sc/300.css";
 import "@fontsource/noto-sans-sc/400.css";
 import "@fontsource/noto-sans-sc/700.css";
-const base = import.meta.env.PUBLIC_BASE_PATH;
-const urlPath = base ? `/${base}/favicon.svg` : `/favicon.svg`;
-const fixedUrlOath = urlPath.replace("//", "/");
+// const base = import.meta.env.PUBLIC_BASE_PATH;
+// const urlPath = base ? `/${base}/favicon.svg` : `/favicon.svg`;
+// const fixedUrlOath = urlPath.replace("//", "/");
 interface Props {
   title: string;
   isMd?: boolean;
@@ -22,7 +22,7 @@ const { title, isMd } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={fixedUrlOath} />
+    <link rel="icon" href="https://s2.loli.net/2021/12/16/rxjhMFtGElVIuyz.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
