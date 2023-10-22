@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"./**/*.{astro,ts,mjs,json,md,mdx}\""
+    "format": "prettier --write \"./**/*.{astro,ts,mjs,json,md,mdx}\"",
+    "docker:build": "docker build -t astro-blog ."
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
