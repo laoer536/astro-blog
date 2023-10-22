@@ -7,6 +7,7 @@
 - Typescript support.
 - Tailwindcss support.
 - Github page.
+- Docker support.
 
 ## 🧞 Commands
 
