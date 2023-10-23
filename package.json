@@ -9,7 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write \"./**/*.{astro,ts,mjs,json,md,mdx}\"",
-    "docker:build": "docker build -t astro-blog ."
+    "docker:build": "docker build -t astro-blog .",
+    "docker:run": "docker rm -f astro-blog && docker run --name astro-blog -d -p 8080:8080 astro-blog",
+    "release:local": "pnpm docker:build && pnpm docker:run"
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
