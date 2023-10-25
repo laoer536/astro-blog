@@ -1,10 +1,8 @@
 ---
 import "@fontsource-variable/inter";
 import "@fontsource-variable/fira-code";
-import "@fontsource/noto-sans-sc/100.css";
-import "@fontsource/noto-sans-sc/300.css";
-import "@fontsource/noto-sans-sc/400.css";
-import "@fontsource/noto-sans-sc/700.css";
+import "@fontsource-variable/noto-sans-sc";
+import ThemeIcon from "../components/ThemeIcon.astro";
 // const base = import.meta.env.PUBLIC_BASE_PATH;
 // const urlPath = base ? `/${base}/favicon.svg` : `/favicon.svg`;
 // const fixedUrlOath = urlPath.replace("//", "/");
@@ -27,6 +25,7 @@ const { title, isMd } = Astro.props;
     <title>{title}</title>
   </head>
   <body class:list={[{ "isMd prose prose-neutral lg:prose-lg": isMd }]}>
+    <ThemeIcon />
     <slot />
   </body>
 </html>
@@ -34,17 +33,23 @@ const { title, isMd } = Astro.props;
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
+    --accent-dark: 15, 23, 42;
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
   }
+  .dark .isMd {
+    @apply prose-invert;
+  }
   html {
-    font-family: "Inter Variable", "Noto Sans SC", system-ui, sans-serif;
+    font-family: "Inter Variable", "Noto Sans SC Variable", system-ui, sans-serif;
     background: rgb(var(--accent-light));
     font-weight: 500;
   }
   html.dark {
     background: rgb(var(--accent-dark));
     color: #aba8bd;
+  }
+  .dark .nav-links a {
+    color: #fff;
   }
   body {
     @apply py-10 w-full p-4 lg:mx-auto lg:p-0 lg:py-16;

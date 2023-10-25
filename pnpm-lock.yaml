@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -14,9 +14,9 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.8
     version: 5.0.8
-  '@fontsource/noto-sans-sc':
-    specifier: ^5.0.7
-    version: 5.0.7
+  '@fontsource-variable/noto-sans-sc':
+    specifier: ^5.0.3
+    version: 5.0.3
   astro:
     specifier: ^2.10.9
     version: 2.10.9
@@ -789,8 +789,8 @@ packages:
     resolution: {integrity: sha512-WkYfFNccmEIeL2fNg0mYeLWqOoB7xD8MFxFRc4IwbSP2o8ZaBt36v5aW4by4MyrgGRMNk7uNi5LbvYKq6clPjw==}
     dev: false
 
-  /@fontsource/noto-sans-sc@5.0.7:
-    resolution: {integrity: sha512-aLE0DpAQtiMFP7ZPKf0uhbmfs1c54uI/tt82T1DW1Q8Z6CnVInd6opjYdvkSMrzIPovce+PdrrxFFY68YtRXcA==}
+  /@fontsource-variable/noto-sans-sc@5.0.3:
+    resolution: {integrity: sha512-q0JNlXUyqUNzcNEn1wUtUl/8VZ2JmpdQYdh0ImtNRDQskWF4EldBTO3MdFZHUs/JJtnOQ/zZoFjfAOuXisYeKw==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
