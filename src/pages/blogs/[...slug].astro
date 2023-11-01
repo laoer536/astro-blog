@@ -18,5 +18,6 @@ const { Content } = await entry.render();
 
 <Layout title={entry.data.title} isMd={true}>
   <h1>{entry.data.title}</h1>
+  <time class="block mb-[2em] text-base">{entry.data.date}</time>
   <Content />
 </Layout>
